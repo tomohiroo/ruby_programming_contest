@@ -1,6 +1,5 @@
-def is_valid? bin
-  return false if bin.include? "11"
-  true
+def is_valid?(bin)
+  !bin.include? "11"
 end
 
 h, w, k = gets.split.map(&:to_i)
